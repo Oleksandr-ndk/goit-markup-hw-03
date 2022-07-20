@@ -77,7 +77,6 @@ li {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-navigation {
@@ -105,6 +104,7 @@ li {
 .header-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-list .header-item:not(:last-child) {
@@ -332,6 +332,7 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   width: 270px;
+  background: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
 }
@@ -374,9 +375,6 @@ img {
 }
 
 .filter-item {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .filter-btn {
@@ -398,7 +396,9 @@ img {
 .filter-item :hover,
 .filter-item :focus {
   background: var(--accent-color);
-  color: var(--third-text-color);
+  color: var(--primary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Cards */
